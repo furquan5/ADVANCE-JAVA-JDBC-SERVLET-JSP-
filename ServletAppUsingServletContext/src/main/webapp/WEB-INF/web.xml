@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<context-param>
+		<param-name>a</param-name>
+		<param-value>3000</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>FirstServlet</servlet-name>
+		<servlet-class>test.FirstServlet</servlet-class>
+		<init-param>
+			<param-name>b</param-name>
+			<param-value>4000</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FirstServlet</servlet-name>
+		<url-pattern>/first</url-pattern>
+	</servlet-mapping>
+	>
+
+	<servlet>
+		<servlet-name>SecondServlet</servlet-name>
+		<servlet-class>test.SecondServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SecondServlet</servlet-name>
+		<url-pattern>/second</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>input.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>
